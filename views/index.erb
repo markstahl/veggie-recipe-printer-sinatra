@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Veggie Recipe Printer</title>
+  </head>
+
+  <body>
+
+    <h1><%= @name %></h1>
+
+    <h3>Ingredients</h3>
+    <% @ingredients.each do |ingredient| %>
+     <li><%= ingredient %></li>
+     <% end %>
+
+    <h3>Directions</h3>
+    <% @directions.each do |direction| %>
+     <li><%= direction %></li>
+     <% end %>
+
+     <h3>Reviews</h3>
+     <% @reviews.each do |review| %>
+     <li><%= review %></li>
+     <% end %>
+
+  </body>
+</html>
